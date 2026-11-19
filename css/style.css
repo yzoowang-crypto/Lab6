@@ -1,1 +1,13 @@
-/* Add a coffee color theme at the end of the lab. */
+:root {
+  --bs-primary-base: #7a4631;
+  --bs-primary-bg: #7a4631;
+  --bs-primary-fg: #70402e;
+  --bs-primary-border: #7a4631;
+  --bs-primary-contrast: #ffffff;
+  --bs-primary-focus-ring: #a67863;
+}
+.btn-solid.theme-primary {
+  --bs-btn-bg: #7a4631;
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #7a4631;
+}
