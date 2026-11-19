@@ -9,9 +9,37 @@
   <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Campus Coffee Spot</a>
+      <button class="btn navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-label="Open menu">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-start" id="siteDrawer" aria-label="Site navigation">
+        <div class="drawer-header">
+          <strong>Menu</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
   <main class="container my-5">
-    <h1>Campus Coffee Spot</h1>
-    <p>Welcome to our student cafe website.</p>
+    <header class="text-center mb-4">
+      <h1 class="fw-bold">Welcome to Campus Coffee Spot</h1>
+      <p>A student-run cafe concept with coffee, tea, and snacks.</p>
+    </header>
   </main>
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Campus Coffee Spot & A Student Website</p>
+    </div>
+  </footer>
 </body>
 </html>
