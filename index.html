@@ -33,7 +33,7 @@
   <main class="container my-5">
     <header class="text-center mb-4">
       <h1 class="fw-bold">Welcome to Campus Coffee Spot</h1>
-      <p>A student-run cafe concept with coffee, tea, and snacks.</p>
+      <p>A Student-run cafe concept with coffee, tea, and snacks.</p>
     </header>
     <section class="mb-5" aria-label="Coffee shop highlights">
       <div id="coffeeCarousel" class="carousel border rounded-3 p-2" aria-label="Coffee highlights">
@@ -60,6 +60,125 @@
       </div>
     </section>
 
+    <section id="menu" aria-labelledby="menuHeading">
+      <h2 id="menuHeading" class="text-center mb-4">Our Menu</h2>
+      <div class="row g-4">
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/latte.jpg" class="card-img-top w-100" alt="Iced latte in a glass with swirls of espresso, milk, and ice">
+          <div class="card-body">
+            <h3 class="card-title h5">Iced Latte</h3>
+            <p class="card-text">A chilled espresso drink with milk.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>Smooth espresso and cold milk served over ice. A simple choice for warm afternoons.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#latteDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="latteDialog" class="dialog" aria-labelledby="latteDialogTitle">
+          <div class="dialog-header"><h2 id="latteDialogTitle" class="h5 mb-0">Iced Latte</h2></div>
+          <div class="dialog-body"><p>Smooth espresso and cold milk served over ice. A simple choice for warm afternoons.</p><p><strong>Example price:</strong> $5.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/matcha.jpg" class="card-img-top w-100" alt="Iced matcha latte topped with creamy foam and green matcha powder">
+          <div class="card-body">
+            <h3 class="card-title h5">Matcha Latte</h3>
+            <p class="card-text">Matcha mixed with creamy milk.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>A lightly sweet green tea drink with milk. Available hot or iced.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#matchaDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="matchaDialog" class="dialog" aria-labelledby="matchaDialogTitle">
+          <div class="dialog-header"><h2 id="matchaDialogTitle" class="h5 mb-0">Matcha Latte</h2></div>
+          <div class="dialog-body"><p>A lightly sweet green tea drink with milk. Available hot or iced.</p><p><strong>Example price:</strong> $5.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/cappuccino.jpg" class="card-img-top w-100" alt="Cappuccino in a white cup decorated with heart-shaped latte art">
+          <div class="card-body">
+            <h3 class="card-title h5">Cappuccino</h3>
+            <p class="card-text">Espresso with steamed milk and foam.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>A classic espresso drink topped with thick milk foam.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#cappuccinoDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="cappuccinoDialog" class="dialog" aria-labelledby="cappuccinoDialogTitle">
+          <div class="dialog-header"><h2 id="cappuccinoDialogTitle" class="h5 mb-0">Cappuccino</h2></div>
+          <div class="dialog-body"><p>A classic espresso drink topped with thick milk foam.</p><p><strong>Example price:</strong> $5.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/cake.jpg" class="card-img-top w-100" alt="Slice of chocolate cake topped with cream on a white plate">
+          <div class="card-body">
+            <h3 class="card-title h5">Chocolate Cake</h3>
+            <p class="card-text">A slice of rich chocolate cake.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>A soft chocolate cake topped with cream. A sweet treat to enjoy with coffee.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#cakeDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="cakeDialog" class="dialog" aria-labelledby="cakeDialogTitle">
+          <div class="dialog-header"><h2 id="cakeDialogTitle" class="h5 mb-0">Chocolate Cake</h2></div>
+          <div class="dialog-body"><p>A soft chocolate cake topped with cream. A sweet treat to enjoy with coffee.</p><p><strong>Example price:</strong> $4.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/muffin.jpg" class="card-img-top w-100" alt="Blueberry muffin on a white plate with a fork beside it">
+          <div class="card-body">
+            <h3 class="card-title h5">Blueberry Muffin</h3>
+            <p class="card-text">A soft muffin filled with blueberries.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>A lightly sweet muffin with blueberries, perfect for a quick study break.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#muffinDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="muffinDialog" class="dialog" aria-labelledby="muffinDialogTitle">
+          <div class="dialog-header"><h2 id="muffinDialogTitle" class="h5 mb-0">Blueberry Muffin</h2></div>
+          <div class="dialog-body"><p>A lightly sweet muffin with blueberries, perfect for a quick study break.</p><p><strong>Example price:</strong> $3.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/rolls.jpg" class="card-img-top w-100" alt="Two golden butter rolls on a white plate">
+          <div class="card-body">
+            <h3 class="card-title h5">Butter Rolls</h3>
+            <p class="card-text">Soft golden rolls for a quick snack.</p>
+            <details class="accordion-item mb-3">
+              <summary class="accordion-header">More about this item</summary>
+              <div class="accordion-body"><p>Two soft butter rolls with a golden crust. Great with coffee or tea.</p></div>
+            </details>
+            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#rollsDialog">View Details</button>
+          </div>
+        </article>
+        <dialog id="rollsDialog" class="dialog" aria-labelledby="rollsDialogTitle">
+          <div class="dialog-header"><h2 id="rollsDialogTitle" class="h5 mb-0">Butter Rolls</h2></div>
+          <div class="dialog-body"><p>Two soft butter rolls with a golden crust. Great with coffee or tea.</p><p><strong>Example price:</strong> $2.99</p></div>
+          <div class="dialog-footer"><button type="button" class="btn-outline" data-bs-dismiss="dialog">Close</button></div>
+        </dialog>
+      </div>
+      </div>
+    </section>
   </main>
   <footer class="bg-1 border-top py-4 mt-5">
     <div class="container text-center">
