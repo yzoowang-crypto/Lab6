@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Coffee Spot | Contact</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Campus Coffee Spot</a>
+      <button class="btn navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-label="Open menu">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-start" id="siteDrawer" aria-label="Site navigation">
+        <div class="drawer-header">
+          <strong>Menu</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+  <main class="container my-5">
+    <header class="mb-4">
+      <h1>Contact Campus Coffee Spot</h1>
+      <p>Have a question about our drinks or snacks? Let us know!</p>
+    </header>
+    <form action="#" method="get" aria-label="Contact form">
+      <div class="row g-4">
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="firstName">First name</label>
+            <input class="form-control" id="firstName" name="firstName" type="text" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="lastName">Last name</label>
+            <input class="form-control" id="lastName" name="lastName" type="text" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="emailAddress">Email</label>
+            <input class="form-control" id="emailAddress" name="email" type="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="orderType">What are you asking about?</label>
+            <select class="form-control" id="orderType" name="orderType" required>
+              <option value="">Choose a topic</option>
+              <option value="coffee">Coffee drinks</option>
+              <option value="tea">Tea drinks</option>
+              <option value="snacks">Snacks</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <input type="checkbox" class="check" id="consent" name="consent" required>
+            <label for="consent">I agree to receive the updated message in my email.</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn-solid theme-primary">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Campus Coffee Spot & A Student Website</p>
+    </div>
+  </footer>
+</body>
+</html>
